@@ -37,6 +37,16 @@ module.exports = {
     autoprefixer: {},
   },
 }
+
+/* OR */
+
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
++   require('postcss-themewind'),
+    require('autoprefixer'),
+  ],
+}
 ```
 
 **Step 3:** Modify `tailwind.config.js`:
@@ -59,7 +69,11 @@ module.exports = {
 }
 ```
 
-## Demo
+### Demo
 
 [aryan02420/postcss-themewind-demo](https://github.com/aryan02420/postcss-themewind-demo/)
+<p align="center">
+    <a href="https://aryan02420.github.io/postcss-themewind-demo/"><img alt="postcss-themewind demo" src="./preview.png"></a>
+</p>
+
 
